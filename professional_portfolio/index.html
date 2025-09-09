@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohab Ahmed | Senior Backend Developer & API Specialist</title>
+  <meta name="description" content="Professional backend developer specializing in Django, REST APIs, and scalable web applications. Experienced in Python, PostgreSQL, and cloud deployment.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <canvas class="bg-canvas" id="bgCanvas" aria-hidden="true"></canvas>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loader"></div>
+    <p>Loading Portfolio...</p>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-left">
+        <div class="logo">
+          <i class="fas fa-code"></i>
+          <span>Eng.Mohab</span>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="navbar-right">
+        <div class="nav-controls">
+          <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <button class="theme-toggle" aria-label="Toggle theme" aria-pressed="false">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-rocket"></i>
+        <span>Available for new opportunities</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="greeting">Hello, I'm</span>
+        <span class="name">Mohab Zaher</span>
+        <span class="title">Senior Backend Developer</span>
+      </h1>
+      <p class="hero-description">
+        I craft robust, scalable backend systems and RESTful APIs that power modern applications. 
+        With expertise in Django, Python, and cloud deployment, I transform ideas into reliable digital solutions.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">2+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">20+</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">95%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+      <div class="cta-group">
+        <a href="#contact" class="btn primary">
+          <i class="fas fa-paper-plane"></i>
+          Hire Me
+        </a>
+        <a href="#projects" class="btn secondary">
+          <i class="fas fa-eye"></i>
+          View Work
+        </a>
+        <a href="assets/MyCV.pdf" class="btn outline" download>
+          <i class="fas fa-download"></i>
+          Download CV
+        </a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/mohab1-2" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mohab-ahmedd" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:mohabahmedzaher@gmail.com" aria-label="mohabahmedzaher@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Hero decorative SVG line -->
+    <svg id="heroLine" class="hero-line" viewBox="0 0 800 200" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M20 160 C 200 80, 400 220, 780 60" fill="none"/>
+    </svg>
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p class="section-subtitle">Passionate about creating exceptional digital experiences</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="lead">
+            I am a passionate Senior Backend Developer with over 2 years of experience crafting robust, scalable solutions for modern applications.
+          </p>
+          <p>
+            My expertise lies in building secure, high-performance backend systems using Python, Django, and RESTful APIs. I specialize in database design, API integration, and cloud deployment, ensuring every project I work on is efficient, maintainable, and follows industry best practices.
+          </p>
+          <p>
+            I'm highly motivated, detail-oriented, and committed to delivering clean, reliable code that helps businesses grow and scale. Whether you need a custom API, database optimization, or a complete backend solution, I can transform your ideas into robust digital products.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <i class="fas fa-shield-alt"></i>
+              <span>Security-First Approach</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-rocket"></i>
+              <span>Performance Optimized</span>
+            </div>
+            <div class="highlight">
+              <i class="fas fa-code"></i>
+              <span>Clean Code Standards</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="image-container">
+            <img src="assets/profile.jpg" alt="Mohab Ahmed" />
+            <div class="image-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2>Professional Experience</h2>
+        <p class="section-subtitle">My journey in software development</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Senior Backend Developer</h3>
+              <span class="company">TechCorp Solutions</span>
+              <span class="period">2024 - Present</span>
+            </div>
+            <p>Leading backend development for enterprise applications, mentoring junior developers, and architecting scalable solutions.</p>
+            <ul class="achievements">
+              <li>Reduced API response time by 60% through optimization</li>
+              <li>Implemented microservices architecture for better scalability</li>
+              <li>Led team of 5 developers on major projects</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Software tester</h3>
+              <span class="company">DEPI.</span>
+              <span class="period">2025 - 2025</span>
+            </div>
+            <p>Learned new programming languages(Java), frameworks(Selenium), and databases(MySQL).</p>
+            <ul class="achievements">
+              <li>Built 50+ Test cases for various client projects</li>
+              <li>Improved database performance.</li>
+              <li>ISTQB certification.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2>Skills & Expertise</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+      <div class="skills-container">
+        <div class="skills-category">
+          <h3><i class="fas fa-server"></i> Backend Development</h3>
+          <div class="skill-icons-grid">
+            <div class="skill-icon"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="skill-icon"><i class="fas fa-leaf"></i><span>Django</span></div>
+            <div class="skill-icon"><i class="fas fa-plug"></i><span>REST APIs</span></div>
+            <div class="skill-icon"><i class="fas fa-database"></i><span>MySQL</span></div>
+          </div>
+        </div>
+        
+        <div class="skills-category">
+          <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+          <div class="skill-icons-grid">
+            <div class="skill-icon"><i class="fab fa-git-alt"></i><span>Git & GitHub</span></div>
+            <div class="skill-icon"><i class="fab fa-docker"></i><span>Docker</span></div>
+            <div class="skill-icon"><i class="fab fa-aws"></i><span>AWS</span></div>
+            <div class="skill-icon"><i class="fas fa-database"></i><span>Redis</span></div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3><i class="fas fa-lightbulb"></i> Additional Skills</h3>
+          <div class="skills-tags">
+            <span class="skill-tag">problem solving</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Microservices</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">integration testing</span>
+            <span class="skill-tag">Unit Testing</span>
+            <span class="skill-tag">End-to-End Testing</span>
+            <span class="skill-tag">API Documentation</span>
+            <span class="skill-tag">Performance Optimization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p class="section-subtitle">Some of my recent work</p>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="api">APIs</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="cpp">C++ Projects</button>
+      </div>
+      <div class="project-grid">
+        <div class="project-card" data-category="api web">
+          <div class="project-image">
+            <img src="assets/project1.jpg" alt="Hospital Management System" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="Live Demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Hospital Management System</h3>
+            <p>A comprehensive backend system for managing patients, doctors, appointments, and medical records with advanced reporting capabilities.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">JWT</span>
+            </div>
+            <div class="project-features">
+              <span><i class="fas fa-users"></i> Multi-role authentication</span>
+              <span><i class="fas fa-chart-line"></i> Analytics dashboard</span>
+              <span><i class="fas fa-shield-alt"></i> HIPAA compliant</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-category="api">
+          <div class="project-image">
+            <img src="assets/project2.jpg" alt="Fitness Tracker API" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="Live Demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Fitness Tracker API</h3>
+            <p>RESTful API for tracking user activities, goals, and progress with real-time analytics and social features.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Django REST</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">Celery</span>
+              <span class="tech-tag">AWS</span>
+            </div>
+            <div class="project-features">
+              <span><i class="fas fa-mobile-alt"></i> Mobile-first design</span>
+              <span><i class="fas fa-chart-bar"></i> Real-time analytics</span>
+              <span><i class="fas fa-users"></i> Social features</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="assets/project3.jpg" alt="E-commerce Platform" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="Live Demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>E-commerce Platform</h3>
+            <p>Scalable e-commerce backend with payment processing, inventory management, and order fulfillment systems.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">Stripe API</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+            <div class="project-features">
+              <span><i class="fas fa-credit-card"></i> Payment processing</span>
+              <span><i class="fas fa-box"></i> Inventory management</span>
+              <span><i class="fas fa-truck"></i> Order tracking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="cpp">
+          <div class="project-image">
+            <img src="assets/project3.jpg" alt="C++ High-Performance Module" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="Live Demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" aria-label="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>C++ High-Performance Module</h3>
+            <p>Optimized C++ component for compute-intensive workloads with clean interfaces and benchmarks.</p>
+            <div class="project-tech">
+              <span class="tech-tag">C++17</span>
+              <span class="tech-tag">STL</span>
+              <span class="tech-tag">CMake</span>
+            </div>
+            <div class="project-features">
+              <span><i class="fas fa-tachometer-alt"></i> Zero-copy pipelines</span>
+              <span><i class="fas fa-memory"></i> Memory-safe patterns</span>
+              <span><i class="fas fa-cogs"></i> Modular design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Client Testimonials</h2>
+        <p class="section-subtitle">What people say about my work</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Mohab architected a resilient API platform that raised our reliability bar. His ownership and clarity turned complex requirements into elegant, production-ready solutions."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="assets/client1.jpg" alt="Sarah Johnson" />
+            <div class="author-info">
+              <h4>Sarah Johnson</h4>
+              <span>CTO, TechStartup</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"From performance tuning to observability, Mohab consistently delivered measurable impact. We saw faster releases, lower latency, and fewer incidents within weeks."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="assets/client2.jpg" alt="Michael Chen" />
+            <div class="author-info">
+              <h4>Michael Chen</h4>
+              <span>Product Manager, HealthTech</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Clean architecture, thoughtful APIs, and impeccable documentation. Mohab elevated our engineering standards and mentored the team along the way."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="assets/client3.jpg" alt="Emily Rodriguez" />
+            <div class="author-info">
+              <h4>Emily Rodriguez</h4>
+              <span>Founder, FitnessApp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">Let's discuss your next project</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <a href="mailto:mohabahmedzaher@gmail.com">mohabahmedzaher@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="contact-details">
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/mohab-ahmedd" target="_blank">mohab-ahmedd</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-details">
+              <h4>GitHub</h4>
+              <a href="https://github.com/mohab1-2" target="_blank">mohab1-2</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <span>Available for remote work worldwide</span>
+            </div>
+          </div>
+        </div>
+        
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn primary">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-code"></i>
+            <span>Eng.Mohab</span>
+          </div>
+          <p>Building robust, scalable backend solutions for modern applications.</p>
+          <div class="footer-social">
+            <a href="https://github.com/mohab1-2" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mohab-ahmedd" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:mohabahmedzaher@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li>Backend Development</li>
+            <li>API Development</li>
+            <li>Database Design</li>
+            <li>Cloud Deployment</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Mohab Ahmed. All rights reserved.</p>
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/animejs@4.0.0/lib/anime.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
